@@ -116,6 +116,7 @@ getLatestPrice("TSLA");
 Useful for DeFi protocols needing stock collateral pricing.
 
 🧪 **Testing Flow (Remix or Local Hardhat)**
+
 Deploy TestERC20 and mint tokens to yourself.
 
 Deploy TestStrategy using token address.
@@ -131,6 +132,7 @@ Call withdraw() and verify returns from strategy.
 
 
 🔐 **Security Notes**
+
 Vault uses ReentrancyGuard, Pausable, and Ownable for safe access control.
 
 Only the Vault can call TestStrategy deposit/withdraw.
@@ -142,6 +144,7 @@ Strategy contracts must be audited before deployment on mainnet.
 
 
 🌐 **Supported Networks**
+
 Contract	                        Network	                  Notes                                       
 Vault	                         Any EVM chain	              works with any ERC20 token                               
 Stock Oracle	                Ethereum Mainnet	            Only place Chainlink stock feeds exist                            
