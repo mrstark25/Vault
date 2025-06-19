@@ -2,17 +2,17 @@
 
 This README is structured with:
 
-✅ #Overview
+✅ **Overview**
 
-🧱 #Contracts
+🧱 **Smart Contracts**
 
-🚀 #Deployment order
+🚀 **Deployment order**
 
-⚙️ #How it works
+⚙️ **How it works**
 
-🧪 #Testing
+🧪 **Testing**
 
-🔐 #Security notes
+🔐 **Security notes**
 
 
 📘 Project: On-Chain Vault + Stock Price Oracle
@@ -22,8 +22,8 @@ Vault Contract (ERC4626-based): Allows users to deposit ERC20 tokens and earn yi
 
 StockPriceOracle: An on-chain price oracle for stocks using Chainlink Price Feeds.
 
-🧱 Smart Contracts
-🏦 #Vault Contract (Vault.sol)
+🧱 **Smart Contracts**
+🏦 Vault Contract (Vault.sol)
 A secure, upgradeable vault based on ERC4626, designed to:
 
 Accept deposits and issue yield-bearing vault shares.
@@ -47,7 +47,7 @@ Admin-configurable by owner.
 
 
 
-🧭 #Deployment Order
+🧭 **Deployment Order**
 1. 🧪 Deploy TestERC20 (for testing Vault)
 A simple test token like USDC or DAI.
 
@@ -79,7 +79,7 @@ Pass a valid Chainlink feed address on supported networks (Ethereum mainnet, etc
 new StockPriceOracle("0xFeedAddressForTSLA")
 ```
 
-⚙️ #How It Works
+⚙️ **How It Works**
 🏦 Vault
 deposit(amount) → Mints shares and optionally sends funds to strategy.
 
@@ -108,7 +108,7 @@ getLatestPrice("TSLA");
 
 Useful for DeFi protocols needing stock collateral pricing.
 
-🧪 Testing Flow (Remix or Local Hardhat)
+🧪 **Testing Flow (Remix or Local Hardhat)**
 Deploy TestERC20 and mint tokens to yourself.
 
 Deploy TestStrategy using token address.
@@ -121,7 +121,7 @@ Call deposit() and check balances.
 
 Call withdraw() and verify returns from strategy.
 
-🔐 #Security Notes
+🔐 **Security Notes**
 Vault uses ReentrancyGuard, Pausable, and Ownable for safe access control.
 
 Only the Vault can call MockStrategy deposit/withdraw.
