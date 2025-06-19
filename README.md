@@ -145,8 +145,8 @@ Strategy contracts must be audited before deployment on mainnet.
 
 🌐 **Supported Networks**
 
-Contract	                        Network	                  Notes                                       
-Vault	                         Any EVM chain	              works with any ERC20 token                               
-Stock Oracle	                Ethereum Mainnet	            Only place Chainlink stock feeds exist                            
-TestStrategy	                Local/Testnets	              Not for production use                              
+**Vault** :- Any EVM Chain, Works with any ERC20Token
 
+**Stock Oracle** :- Ethereum Mainnet, Only place Chainlink stock feeds exist
+
+**Test Strategy** :- Local/Testnets, Not for production use
